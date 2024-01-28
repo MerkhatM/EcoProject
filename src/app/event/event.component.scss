@@ -1,48 +1,57 @@
 .parent {
+  display: flex;
   width: 840px;
+  min-height: 100px;
   position: relative;
   padding: 0;
   font-family: 'PT Sans Caption', sans-serif;
-  border-radius: 9px;
-  min-height: 100px;
+  border: 0.3px solid black;
+  overflow: hidden;
+
 }
+
 
 .top-block,
 .bottom-block,
 .third-block {
   box-sizing: border-box;
   padding: 0;
-  border: 0.3px solid black;
+
 
 }
 
 .top-block,
 .bottom-block {
   width: 100px;
-  position: absolute;
+  flex: 1;
+
+}
+.left-side{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  min-height: 100px;
+
 }
 
 .top-block {
-  height: auto;
-  top: 0;
-  left: 0;
+  min-height: 32px;
   background-color: #F7F7F7;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 0.3px solid black;
 }
 
 .bottom-block {
-  height: 68px;
-  bottom: 0;
-  left: 0;
+  min-height: 68px;
   background-color: #F7F7F7;
 }
 
 .third-block {
-  width: calc(100% - 100px);
-  margin-left: 100px;
+  width: 740px;
   background-color: #F7F7F7;
+  border-left: 0.3px solid black;
 }
 
 .top-block {

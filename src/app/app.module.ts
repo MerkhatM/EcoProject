@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {LoginComponent} from "./login/login.component";
 import {SignUpComponent} from "./sign-up/sign-up.component";
 import { EventComponent } from './event/event.component';
-import { TemplateComponent } from './template/template.component';
+
 
 
 
@@ -21,8 +21,7 @@ import { TemplateComponent } from './template/template.component';
     LoginComponent,
     SignUpComponent,
     HomeComponent,
-    EventComponent,
-    TemplateComponent
+    EventComponent
   ],
   imports: [
     BrowserModule,
